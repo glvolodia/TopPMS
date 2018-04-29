@@ -21,12 +21,15 @@
           <span class="focus-border"></span>
           <input id="pass" name="pass" class="effect-2" type="password" placeholder="Password..." ngModel>
           <span class="focus-border"></span>
+          <input id="name" name="name" class="effect-2" type="text" placeholder="Name..." ngModel>
+          <span class="focus-border"></span>
+          <input id="surnamename" name="surname" class="effect-2" type="text" placeholder="Surname..." ngModel>  
           <div class="forget">
             <button class="btn btn-default btn-sm">FORGOT PASSWORD?</button>
           </div>
           <div class="routerLink">
-              <a class="btn btn-default" [routerLink]="'/registration'" role="button">REGISTRATION</a>
-            </div>
+              <a class="btn btn-default" [routerLink]="'/login'" role="button">LOGIN</a>
+          </div>
         </div>
         <button class="enterButton" type="submit">
           <i class="fa fa-lock fa-2x text-white"></i>

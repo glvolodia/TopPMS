@@ -137,6 +137,11 @@ input::placeholder{
 	font-weight: 700;
 }
 
+/* Added for fixing login input */
+input[_ngcontent-c1] {
+    width: 100%!important;
+}
+
 .routerLink {
 	padding-left: 50px;
     font-weight: 600;
