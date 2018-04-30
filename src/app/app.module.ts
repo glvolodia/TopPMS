@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { routing } from './app.routing';
 import { ProjectsComponent } from './projects/projects.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { UserService } from './login/user.service';
+import { TasksComponent } from './tasks/tasks.component';
 
 
 @NgModule({
@@ -16,14 +18,15 @@ import { RegistrationComponent } from './registration/registration.component';
     NavbarComponent,
     LoginComponent,
     ProjectsComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    TasksComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     routing
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
