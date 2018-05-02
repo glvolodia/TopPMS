@@ -10,6 +10,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { UserService } from './login/user.service';
 import { TasksComponent } from './tasks/tasks.component';
+import { ProjectsService } from './projects/projects.service';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { TasksComponent } from './tasks/tasks.component';
     FormsModule,
     routing
   ],
-  providers: [UserService],
+  providers: [UserService, ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
