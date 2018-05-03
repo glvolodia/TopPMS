@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProjectsService } from './projects.service';
+import { Project } from '../common/protocols';
 
 @Component({
   selector: 'app-projects',
@@ -12,7 +13,11 @@ export class ProjectsComponent implements OnInit{
   constructor(private projectService: ProjectsService) {}
 
   ngOnInit() {
-    
+
   };
+
+  getProjectDetailsUrl(project: Project) {
+    return ['/projects/' + project.id];
+  }
 
 }

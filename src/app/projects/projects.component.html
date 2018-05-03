@@ -7,7 +7,8 @@
     <div class="row" *ngFor="let project of projectService.projects">
       <div class="col">{{project.name}}</div>
       <div class="col">{{project.owner}}</div>
-      <div class="col">{{project.type}}<div>
+      <div class="col">{{project.type}}</div>
+      <span [routerLink]="getProjectDetailsUrl(project)">Details</span>  
     </div>
   </div>
 </div>
